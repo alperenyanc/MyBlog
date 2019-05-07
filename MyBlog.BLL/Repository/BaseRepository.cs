@@ -11,7 +11,7 @@ using System.Data.Entity.Infrastructure;
 
 namespace MyBlog.BLL.Repository
 {
-    public class BaseRepository<T> where T:BaseEntity
+    public class BaseRepository<T> where T: BaseEntity
     {
         private ProjeContext db;
         protected DbSet<T> table;
