@@ -83,7 +83,11 @@ namespace MyBlog.BLL.Repository
 
             }
         }
+        public T GetByDefault(Expression<Func<T, bool>> exp)
+        {
+            return table.Where(exp).FirstOrDefault();
+        }
 
-        
+
     }
 }

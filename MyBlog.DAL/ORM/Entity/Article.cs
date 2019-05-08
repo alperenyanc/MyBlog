@@ -10,6 +10,7 @@ namespace MyBlog.DAL.ORM.Entity
     {
         public string Header { get; set; }
         public string Content { get; set; }
+        public DateTime? PublishDate { get; set; }
 
         public Guid AppUserID { get; set; }
         public virtual AppUser AppUser { get; set; }

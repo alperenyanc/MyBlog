@@ -147,6 +147,17 @@
     <Content Include="Areas\Admin\Views\Article\Add.cshtml" />
     <Content Include="Areas\Admin\Views\Article\List.cshtml" />
     <Content Include="Areas\Admin\Views\Article\Update.cshtml" />
+    <Content Include="Areas\Member\Views\web.config" />
+    <Content Include="Areas\Author\Views\web.config" />
+    <Content Include="Areas\Author\Views\Shared\AuthorLayoutPage.cshtml" />
+    <Content Include="Areas\Author\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Author\Views\Article\Add.cshtml" />
+    <Content Include="Areas\Author\Views\Article\List.cshtml" />
+    <Content Include="Areas\Author\Views\Article\Update.cshtml" />
+    <Content Include="Areas\Author\Views\Article\Show.cshtml" />
+    <Content Include="Areas\Member\Views\Shared\MemberLayoutPage.cshtml" />
+    <Content Include="Areas\Member\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Member\Views\Article\List.cshtml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -177,6 +188,21 @@
     <Compile Include="Areas\Admin\Models\VM\AddArticleVM.cs" />
     <Compile Include="Areas\Admin\Models\VM\BaseVM.cs" />
     <Compile Include="Areas\Admin\Models\VM\UpdateArticleVM.cs" />
+    <Compile Include="Areas\Author\AuthorAreaRegistration.cs" />
+    <Compile Include="Areas\Author\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\Author\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Author\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Author\Models\DTO\ArticleDTO.cs" />
+    <Compile Include="Areas\Author\Models\DTO\BaseDTO.cs" />
+    <Compile Include="Areas\Author\Models\VM\ArticleCommentVM.cs" />
+    <Compile Include="Areas\Author\Models\VM\CommentVM.cs" />
+    <Compile Include="Areas\Author\Models\VM\JsonLikeVM.cs" />
+    <Compile Include="Areas\Author\Models\VM\LoginVM.cs" />
+    <Compile Include="Areas\Author\Models\VM\UpdateArticleVM.cs" />
+    <Compile Include="Areas\Member\Controllers\ArticleController.cs" />
+    <Compile Include="Areas\Member\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Member\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +247,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Views\Base\" />
+    <Folder Include="Areas\Author\Views\Base\" />
+    <Folder Include="Areas\Member\Models\" />
+    <Folder Include="Areas\Member\Views\Base\" />
     <Folder Include="Content\Images\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />

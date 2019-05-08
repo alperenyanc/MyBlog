@@ -12,7 +12,9 @@ namespace MyBlog.DAL.ORM.Map
         public CommentMap()
         {
             ToTable("dbo.comment");
-            Property(x => x.CommentContent).IsOptional();
+            Property(a => a.Header).IsRequired();
+            Property(a => a.Content).IsRequired();
+            Property(a => a.CommentNumber).IsOptional();
 
             HasKey(x => new { x.AppUserID, x.ArticleID });
         }

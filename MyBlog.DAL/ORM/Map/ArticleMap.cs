@@ -14,6 +14,7 @@ namespace MyBlog.DAL.ORM.Map
             ToTable("dbo.Article");
             Property(x => x.Header).IsOptional();
             Property(x => x.Content).IsOptional();
+            Property(x => x.PublishDate).IsOptional();
 
             HasMany(x => x.Likes)
                 .WithRequired(x => x.Article)

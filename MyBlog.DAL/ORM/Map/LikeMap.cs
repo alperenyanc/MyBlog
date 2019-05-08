@@ -12,8 +12,9 @@ namespace MyBlog.DAL.ORM.Map
         public LikeMap()
         {
             ToTable("dbo.like");
+            Property(a => a.LikeNumber).IsOptional();
 
-         
+
             HasKey(x => new { x.AppUserID, x.ArticleID });
         }
     }
