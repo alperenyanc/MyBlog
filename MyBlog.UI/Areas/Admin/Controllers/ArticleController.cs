@@ -1,5 +1,6 @@
 ﻿using MyBlog.DAL.ORM.Entity;
 using MyBlog.UI.Areas.Admin.Models;
+using MyBlog.UI.Areas.Admin.Models.DTO2;
 using MyBlog.UI.Areas.Admin.Models.VM;
 using System;
 using System.Collections.Generic;

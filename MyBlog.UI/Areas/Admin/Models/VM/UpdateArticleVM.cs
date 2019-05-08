@@ -1,4 +1,5 @@
 ﻿using MyBlog.DAL.ORM.Entity;
+using MyBlog.UI.Areas.Admin.Models.DTO2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
