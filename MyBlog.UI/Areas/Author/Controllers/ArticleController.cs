@@ -21,10 +21,12 @@ namespace MyBlog.UI.Areas.Author.Controllers
         public ActionResult Add(Article data)
         {
             AppUser user = service.AppUserService.GetByDefault(x => x.UserName == User.Identity.Name);
+       
             data.AppUserID = user.ID;
             data.PublishDate = DateTime.Now;
             service.ArticleService.Add(data);
             return Redirect("/Author/Article/List");
+
         }
         public ActionResult List()
         {

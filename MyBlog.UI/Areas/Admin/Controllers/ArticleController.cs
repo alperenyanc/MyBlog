@@ -29,6 +29,7 @@ namespace MyBlog.UI.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Add(Article data)
         {
+            data.PublishDate = DateTime.Now;
             service.ArticleService.Add(data);
             return Redirect("/Admin/Article/List");
         }
@@ -47,6 +48,8 @@ namespace MyBlog.UI.Areas.Admin.Controllers
             model.Article.ID = article.ID;
             model.Article.Header = article.Header;
             model.Article.Content = article.Content;
+            model.Article.PublishDate = DateTime.Now;
+            
 
             model.Categories = service.CatetegoryService.GetActive();
             model.AppUsers = service.AppUserService.GetActive();
