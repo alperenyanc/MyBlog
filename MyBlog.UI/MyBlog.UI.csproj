@@ -204,6 +204,7 @@
     <Compile Include="Areas\Member\Controllers\HomeController.cs" />
     <Compile Include="Areas\Member\MemberAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -255,6 +256,7 @@
     <Folder Include="Areas\Member\Models\" />
     <Folder Include="Areas\Member\Views\Base\" />
     <Folder Include="Content\Images\" />
+    <Folder Include="Views\Article\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
