@@ -144,6 +144,9 @@
     <Content Include="Areas\Admin\Views\Category\Add.cshtml" />
     <Content Include="Areas\Admin\Views\Category\List.cshtml" />
     <Content Include="Areas\Admin\Views\Category\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\List.cshtml" />
+    <Content Include="Areas\Admin\Views\Article\Update.cshtml" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -217,7 +220,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\Article\" />
     <Folder Include="Areas\Admin\Views\Base\" />
     <Folder Include="Content\Images\" />
     <Folder Include="Controllers\" />
